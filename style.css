@@ -1,0 +1,121 @@
+/* GERAIS */
+HTML, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+/* BODY*/
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.layout{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.instagram-tel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.instagram-tel img{
+    height: 50rem;
+}
+.instagram-continuar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.grupo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid rgb(180 180 180 / 50%);
+    padding: 20px;
+    margin: 20px;
+    background: rgb(255 255 255);
+    color: slategray;
+}
+.instagram-logo img{
+    margin: 22px 0 12px 0;
+    height: 3rem;
+}
+.grupo:nth-child(1){
+    min-height: 20rem;
+}
+.minha-foto{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    margin: 8px 0 16px 0;
+    overflow: hidden;
+}
+.continuar{
+    background-color: royalblue;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+.remover{
+    margin: 20px;
+    color: royalblue;
+}
+.not-account{
+    padding-bottom: 15px;
+}
+.link-azul{
+    color: royalblue;
+}
+.get-app{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    flex-direction: column;
+}
+.get-app p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.download{
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+/*  @MEDIA  */
+@media screen and (max-width: 768px) {
+    .layout{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 425px) {
+    .instagram-tel{
+        display: none;
+    }
+    .instagram-continuar{
+        width: 80vw;
+    }
+    .download {
+        flex-wrap: wrap;
+    }
+}
